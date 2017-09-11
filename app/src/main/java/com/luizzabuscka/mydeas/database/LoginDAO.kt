@@ -15,7 +15,7 @@ class LoginDAO {
 
   val TABLE = "logins"
 
-  open fun select(context: Context) : List<Login> {
+  fun select(context: Context) : List<Login> {
     var result: List<Login> = ArrayList<Login>()
     context.database.use {
       result = select(TABLE).exec {
@@ -25,7 +25,7 @@ class LoginDAO {
     return result;
   }
 
-  open fun insert(context: Context, login: Login) {
+  fun insert(context: Context, login: Login) {
     context.database.use {
       val values = ContentValues()
       values.put("usuario", login.usuario)

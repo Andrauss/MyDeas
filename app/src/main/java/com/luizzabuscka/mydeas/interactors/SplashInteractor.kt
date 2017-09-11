@@ -35,9 +35,10 @@ class SplashInteractor(val presenter: ISplashPresenter, val context: Context) : 
       Factory.create().login()
           .observeOn(AndroidSchedulers.mainThread())
           .subscribeOn(Schedulers.io())
-          .subscribe({ result ->
-            saveLogin(result)
-          }, { error ->
+          .subscribe(
+              { result ->
+                saveLogin(result)
+              }, { error ->
             presenter.callNextActivity()
           })
     } else {

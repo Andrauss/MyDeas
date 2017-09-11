@@ -4,4 +4,7 @@
   <string name="hint_user">Usuário</string>
   <string name="hint_password">Senha</string>
   <string name="bt_enter">Entrar</string>
+
+  <string name="facebook_app_id">1913156405615738</string>
+  <string name="fb_login_protocol_scheme">fb1913156405615738</string>
 </resources>
