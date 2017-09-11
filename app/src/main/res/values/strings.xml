@@ -1,0 +1,7 @@
+<resources>
+  <string name="app_name">MyDeas</string>
+
+  <string name="hint_user">Usuário</string>
+  <string name="hint_password">Senha</string>
+  <string name="bt_enter">Entrar</string>
+</resources>
