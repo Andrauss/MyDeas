@@ -29,9 +29,7 @@ class LoginDAO {
     var result: List<Login> = ArrayList<Login>()
     context.database.use {
       result = select(TABLE)
-          .whereArgs("",
-              "usuario" to login.usuario,
-              "senha" to login.senha)
+          .whereArgs("(usuario LIKE '${login.usuario}') and (senha LIKE '${login.senha}')")
           .exec {
         parseList(classParser<Login>())
       }

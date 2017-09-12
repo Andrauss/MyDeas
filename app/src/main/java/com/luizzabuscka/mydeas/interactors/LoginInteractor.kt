@@ -15,7 +15,8 @@ import com.luizzabuscka.mydeas.utils.enum.LoginEnum.WRONG_USER_OR_PASS
 class LoginInteractor(var presenter: ILoginPresenter, val context: Context) : ILoginInteractor {
 
   override fun login(login: Login) {
-    if (LoginDAO().selectLogin(login, context).isNotEmpty()) {
+    var logins = LoginDAO().selectLogin(login, context)
+    if (logins.isNotEmpty()) {
       presenter.loginResponse(SUCCESS)
     } else {
       presenter.loginResponse(WRONG_USER_OR_PASS)

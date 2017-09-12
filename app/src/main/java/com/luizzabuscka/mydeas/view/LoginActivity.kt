@@ -97,7 +97,7 @@ class LoginActivity : AppCompatActivity(), ILoginActivity, AnkoLogger {
     when (type) {
       EMPTY_USER -> input_layout_user.error = errorMessage
       EMPTY_PASSWORD -> input_layout_password.error = errorMessage
-      WRONG_USER_OR_PASS -> input_layout_user.error = errorMessage
+      WRONG_USER_OR_PASS -> toast(errorMessage)
       FACEBOOK_ERROR -> toast(errorMessage)
       else -> toast(errorMessage)
     }
