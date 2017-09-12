@@ -45,4 +45,6 @@ class LoginActivity : AppCompatActivity(), AnkoLogger {
     super.onActivityResult(requestCode, resultCode, data)
     callbackManager.onActivityResult(requestCode, resultCode, data);
   }
+
+
 }

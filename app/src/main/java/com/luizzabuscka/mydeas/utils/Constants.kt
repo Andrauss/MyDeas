@@ -7,6 +7,6 @@ import android.content.Context
  */
 object Constants {
   val BASE_URL = "http://www.mocky.io/v2/"
-  val DB_NAME = "hbreaker_db"
+  val DB_NAME = "mydeas_db"
 }
 
