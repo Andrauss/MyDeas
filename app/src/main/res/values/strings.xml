@@ -7,4 +7,16 @@
 
   <string name="facebook_app_id">1913156405615738</string>
   <string name="fb_login_protocol_scheme">fb1913156405615738</string>
+  <string name="title_activity_main">MainActivity</string>
+
+  <string name="navigation_drawer_open">Open navigation drawer</string>
+  <string name="navigation_drawer_close">Close navigation drawer</string>
+
+  <string name="action_settings">Settings</string>
+  <string name="error_empty_user">Preencha o usuário</string>
+  <string name="error_empty_password">Preencha a senha</string>
+  <string name="error_wrong_user_or_pass">Usuário ou senha incorretos</string>
+  <string name="error_facebook_login">Erro ao logar com Facebook</string>
+  <string name="error_unknown">Erro desconhecido</string>
+  <string name="login_with_facebook">Login com Facebook</string>
 </resources>

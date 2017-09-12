@@ -25,6 +25,20 @@ class LoginDAO {
     return result;
   }
 
+  fun selectLogin(login: Login, context: Context) : List<Login> {
+    var result: List<Login> = ArrayList<Login>()
+    context.database.use {
+      result = select(TABLE)
+          .whereArgs("",
+              "usuario" to login.usuario,
+              "senha" to login.senha)
+          .exec {
+        parseList(classParser<Login>())
+      }
+    }
+    return result;
+  }
+
   fun insert(context: Context, login: Login) {
     context.database.use {
       val values = ContentValues()
