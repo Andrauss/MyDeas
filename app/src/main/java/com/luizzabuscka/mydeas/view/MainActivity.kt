@@ -21,10 +21,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     setSupportActionBar(toolbar)
 
     prefs.logged = true
+    configUi()
+  }
 
+  fun configUi() {
     fab.setOnClickListener { view ->
-      Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-          .setAction("Action", null).show()
+      newIdea()
     }
 
     val toggle = ActionBarDrawerToggle(
@@ -34,6 +36,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     toggle.syncState()
 
     nav_view.setNavigationItemSelectedListener(this)
+  }
+
+  fun newIdea() {
+    //call new idea
   }
 
   override fun onBackPressed() {
