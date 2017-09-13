@@ -1,5 +1,7 @@
 package com.luizzabuscka.mydeas.utils
 
+import android.app.Activity
+import android.content.Intent
 import android.view.View
 import android.view.animation.AccelerateInterpolator
 import android.view.animation.AlphaAnimation
@@ -30,6 +32,12 @@ fun View.fadeOut(duration: Long) {
   val animation = AnimationSet(false) //change to false
   animation.addAnimation(fadeOut)
   this.startAnimation(animation)
+}
+
+fun Activity.startActivityWithFade(intent: Intent, finish: Boolean = false) {
+  this.startActivity(intent)
+  if (finish) this.finish()
+  this.overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
 }
 
 

@@ -3,4 +3,10 @@
   <color name="colorPrimary">#2196F3</color>
   <color name="colorPrimaryDark">#1976D2</color>
   <color name="colorAccent">#1976D2</color>
+  <color name="white">#FFFFFF</color>
+  <color name="hint">#77000000</color>
+  <color name="shadow">#77000000</color>
+  <color name="bt_pressed">#0753A1</color>
+  <color name="bt_normal">#2196F3</color>
+  <color name="bt_border">#1976D2</color>
 </resources>

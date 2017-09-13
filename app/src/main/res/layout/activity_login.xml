@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context="com.luizzabuscka.mydeas.view.LoginActivity"
     >
 
@@ -25,13 +26,14 @@
   <android.support.design.widget.TextInputLayout
       android:id="@+id/input_layout_user"
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_marginBottom="8dp"
+      android:layout_height="@dimen/et_height"
+      android:layout_marginBottom="0dp"
       android:layout_marginEnd="32dp"
       android:layout_marginStart="32dp"
       app:layout_constraintBottom_toTopOf="@+id/input_layout_password"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
+      style="@style/LoginInputLayout"
       >
 
     <EditText
@@ -41,6 +43,8 @@
         android:hint="@string/hint_user"
         android:imeOptions="actionNext"
         android:inputType="textEmailAddress"
+        android:background="@drawable/inputs_background"
+        android:textColor="@color/colorAccent"
         />
 
   </android.support.design.widget.TextInputLayout>
@@ -48,13 +52,14 @@
   <android.support.design.widget.TextInputLayout
       android:id="@+id/input_layout_password"
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
+      android:layout_height="@dimen/et_height"
       android:layout_marginBottom="16dp"
       android:layout_marginEnd="32dp"
       android:layout_marginStart="32dp"
       app:layout_constraintBottom_toTopOf="@+id/btEnter"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
+      style="@style/LoginInputLayout"
       >
 
     <EditText
@@ -63,6 +68,8 @@
         android:layout_height="wrap_content"
         android:hint="@string/hint_password"
         android:imeOptions="actionGo"
+        android:background="@drawable/inputs_background"
+        android:textColor="@color/colorAccent"
         android:inputType="textPassword"
         />
 
@@ -75,6 +82,7 @@
       android:layout_marginEnd="32dp"
       android:layout_marginStart="32dp"
       android:text="@string/bt_enter"
+      style="@style/CustomButton"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"

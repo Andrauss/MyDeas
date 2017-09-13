@@ -9,6 +9,7 @@ import com.luizzabuscka.mydeas.presentation.ISplashPresenter
 import com.luizzabuscka.mydeas.presentation.SplashPresenter
 import com.luizzabuscka.mydeas.utils.fadeIn
 import com.luizzabuscka.mydeas.utils.putDropShadow
+import com.luizzabuscka.mydeas.utils.startActivityWithFade
 import kotlinx.android.synthetic.main.activity_login.ivLogo
 import java.util.Timer
 import kotlin.concurrent.schedule
@@ -30,8 +31,7 @@ class SplashActivity : AppCompatActivity(), ISplashActivity {
 
   override fun callNextActivity(intent: Intent) {
     Timer("schedule", true).schedule(3000) {
-      startActivity(intent)
-      finish()
+      startActivityWithFade(intent, true)
     }
   }
 }

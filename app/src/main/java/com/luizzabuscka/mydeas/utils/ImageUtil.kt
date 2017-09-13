@@ -16,6 +16,7 @@ import android.graphics.RectF
 import android.graphics.drawable.BitmapDrawable
 import android.view.ViewTreeObserver
 import android.widget.ImageView
+import com.luizzabuscka.mydeas.R
 import kotlinx.android.synthetic.main.activity_login.ivLogo
 import org.jetbrains.anko.imageBitmap
 
@@ -67,7 +68,7 @@ fun ImageView.putDropShadow() {
         override fun onGlobalLayout() {
           iv.getViewTreeObserver().removeOnGlobalLayoutListener(this)
           iv.imageBitmap = ImageUtil().imgshadow((iv.drawable as BitmapDrawable).bitmap, iv.height, iv.width,
-              Color.GRAY, 1, 5f, 5f)
+              iv.context.resources.getColor(R.color.shadow), 1, 5f, 5f)
         }
       })
 }

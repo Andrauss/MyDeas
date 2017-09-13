@@ -12,11 +12,29 @@
     <item name="windowActionBar">false</item>
     <item name="windowNoTitle">true</item>
     <item name="android:windowFullscreen">true</item>
+    <item name="android:colorBackground">@color/colorPrimary</item>
   </style>
 
   <style name="AppTheme.NoActionBar">
     <item name="windowActionBar">false</item>
     <item name="windowNoTitle">true</item>
+  </style>
+
+  <style name="LoginInputLayout" parent="Widget.Design.TextInputLayout">
+    <item name="android:textColorHint">@color/hint</item>
+    <item name="android:textSize">18sp</item>
+    <item name="colorAccent">@color/white</item>
+    <item name="colorControlNormal">@color/white</item>
+    <item name="colorControlActivated">@color/white</item>
+  </style>
+
+  <style name="CustomButton" parent="Base.TextAppearance.AppCompat.Button">
+    <item name="android:layout_gravity">center_horizontal</item>
+    <item name="android:padding">6dp</item>
+    <item name="android:background">@drawable/bt_background</item>
+    <item name="android:textColor">@color/white</item>
+    <item name="android:gravity">center</item>
+    <item name="android:textStyle">bold</item>
   </style>
 
   <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
