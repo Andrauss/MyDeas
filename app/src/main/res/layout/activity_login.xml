@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/white"
     tools:context="com.luizzabuscka.mydeas.view.LoginActivity"
     >
 
@@ -43,8 +43,6 @@
         android:hint="@string/hint_user"
         android:imeOptions="actionNext"
         android:inputType="textEmailAddress"
-        android:background="@drawable/inputs_background"
-        android:textColor="@color/colorAccent"
         />
 
   </android.support.design.widget.TextInputLayout>
@@ -68,8 +66,6 @@
         android:layout_height="wrap_content"
         android:hint="@string/hint_password"
         android:imeOptions="actionGo"
-        android:background="@drawable/inputs_background"
-        android:textColor="@color/colorAccent"
         android:inputType="textPassword"
         />
 

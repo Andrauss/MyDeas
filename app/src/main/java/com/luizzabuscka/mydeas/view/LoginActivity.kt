@@ -20,7 +20,7 @@ import com.luizzabuscka.mydeas.utils.enum.LoginEnum.EMPTY_USER
 import com.luizzabuscka.mydeas.utils.enum.LoginEnum.FACEBOOK_ERROR
 import com.luizzabuscka.mydeas.utils.enum.LoginEnum.SUCCESS
 import com.luizzabuscka.mydeas.utils.enum.LoginEnum.WRONG_USER_OR_PASS
-import com.luizzabuscka.mydeas.utils.putDropShadow
+import com.luizzabuscka.mydeas.extensions.putDropShadow
 import kotlinx.android.synthetic.main.activity_login.btEnter
 import kotlinx.android.synthetic.main.activity_login.etPassword
 import kotlinx.android.synthetic.main.activity_login.etUser
@@ -29,10 +29,6 @@ import kotlinx.android.synthetic.main.activity_login.input_layout_user
 import kotlinx.android.synthetic.main.activity_login.ivLogo
 import org.jetbrains.anko.AnkoLogger
 import org.jetbrains.anko.toast
-import android.opengl.ETC1.getHeight
-import android.view.ViewTreeObserver
-
-
 
 
 class LoginActivity : AppCompatActivity(), ILoginActivity, AnkoLogger {
@@ -111,7 +107,7 @@ class LoginActivity : AppCompatActivity(), ILoginActivity, AnkoLogger {
 
   override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
     super.onActivityResult(requestCode, resultCode, data)
-    callbackManager.onActivityResult(requestCode, resultCode, data);
+    callbackManager.onActivityResult(requestCode, resultCode, data)
   }
 
 

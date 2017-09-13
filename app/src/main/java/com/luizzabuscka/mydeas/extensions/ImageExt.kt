@@ -1,11 +1,10 @@
-package com.luizzabuscka.mydeas.utils
+package com.luizzabuscka.mydeas.extensions
 
 import android.graphics.Bitmap
 import android.graphics.Bitmap.Config
 import android.graphics.BlurMaskFilter.Blur
 import android.graphics.BlurMaskFilter
 import android.graphics.Canvas
-import android.graphics.Color
 import android.graphics.Matrix
 import android.graphics.PorterDuffXfermode
 import android.graphics.Paint.ANTI_ALIAS_FLAG
@@ -17,7 +16,6 @@ import android.graphics.drawable.BitmapDrawable
 import android.view.ViewTreeObserver
 import android.widget.ImageView
 import com.luizzabuscka.mydeas.R
-import kotlinx.android.synthetic.main.activity_login.ivLogo
 import org.jetbrains.anko.imageBitmap
 
 

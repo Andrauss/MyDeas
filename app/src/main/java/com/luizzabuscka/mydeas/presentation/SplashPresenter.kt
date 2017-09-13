@@ -4,8 +4,10 @@ import android.content.Context
 import android.content.Intent
 import com.luizzabuscka.mydeas.interactors.ISplashInteractor
 import com.luizzabuscka.mydeas.interactors.SplashInteractor
+import com.luizzabuscka.mydeas.prefs
 import com.luizzabuscka.mydeas.view.ISplashActivity
 import com.luizzabuscka.mydeas.view.LoginActivity
+import com.luizzabuscka.mydeas.view.MainActivity
 
 /**
  * Created by luizzabuscka on 02/08/17.
@@ -17,6 +19,8 @@ class SplashPresenter(val context: Context, val activity: ISplashActivity) : ISp
   override fun callNextActivity() {
     if (!verifyLogged()) {
       activity.callNextActivity(Intent(context, LoginActivity::class.java))
+    } else {
+      activity.callNextActivity(Intent(context, MainActivity::class.java))
     }
   }
 
@@ -29,7 +33,7 @@ class SplashPresenter(val context: Context, val activity: ISplashActivity) : ISp
   }
 
   override fun verifyLogged() : Boolean {
-    return false
+    return prefs.logged
   }
 
 }

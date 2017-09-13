@@ -1,4 +1,4 @@
-package com.luizzabuscka.mydeas.utils
+package com.luizzabuscka.mydeas.extensions
 
 import android.app.Activity
 import android.content.Intent
