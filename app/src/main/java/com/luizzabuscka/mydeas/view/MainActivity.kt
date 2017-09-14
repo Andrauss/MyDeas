@@ -1,5 +1,6 @@
 package com.luizzabuscka.mydeas.view
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
@@ -39,7 +40,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
   }
 
   fun newIdea() {
-    //call new idea
+    startActivity(Intent(this, NewIdeaActivity::class.java))
   }
 
   override fun onBackPressed() {

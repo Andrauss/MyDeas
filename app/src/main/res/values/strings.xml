@@ -5,6 +5,10 @@
   <string name="hint_password">Senha</string>
   <string name="bt_enter">Entrar</string>
 
+  <string name="hint_title">Título</string>
+  <string name="hint_description">Descrição</string>
+  <string name="bt_save">Salvar</string>
+
   <string name="facebook_app_id">1913156405615738</string>
   <string name="fb_login_protocol_scheme">fb1913156405615738</string>
   <string name="title_activity_main">MyDeas</string>
@@ -19,4 +23,8 @@
   <string name="error_facebook_login">Erro ao logar com Facebook</string>
   <string name="error_unknown">Erro desconhecido</string>
   <string name="login_with_facebook">Login com Facebook</string>
+  <string name="error_title">Preencha o título</string>
+  <string name="error_description">Preencha a descrição</string>
+  <string name="toast_success_save">Ideia salva com sucesso</string>
+  <string name="title_new_idea">Nova Ideia</string>
 </resources>

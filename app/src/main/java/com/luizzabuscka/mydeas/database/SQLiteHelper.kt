@@ -25,6 +25,10 @@ class SQLiteHelper(ctx: Context) : ManagedSQLiteOpenHelper(ctx, Constants.DB_NAM
         db.createTable("logins", true,
                 "usuario" to TEXT,
                 "senha" to TEXT)
+
+      db.createTable("ideas", true,
+          "title" to TEXT,
+          "description" to TEXT)
     }
 
     override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {

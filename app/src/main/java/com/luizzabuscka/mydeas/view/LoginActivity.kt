@@ -82,20 +82,12 @@ class LoginActivity : AppCompatActivity(), ILoginActivity, AnkoLogger {
   }
 
   override fun showError(type: LoginEnum) {
-    val errorMessage = when (type) {
-      EMPTY_USER -> getString(string.error_empty_user)
-      EMPTY_PASSWORD -> getString(string.error_empty_password)
-      WRONG_USER_OR_PASS -> getString(string.error_wrong_user_or_pass)
-      FACEBOOK_ERROR -> getString(string.error_facebook_login)
-      else -> getString(string.error_unknown)
-    }
-
     when (type) {
-      EMPTY_USER -> input_layout_user.error = errorMessage
-      EMPTY_PASSWORD -> input_layout_password.error = errorMessage
-      WRONG_USER_OR_PASS -> toast(errorMessage)
-      FACEBOOK_ERROR -> toast(errorMessage)
-      else -> toast(errorMessage)
+      EMPTY_USER -> input_layout_user.error = getString(string.error_empty_user)
+      EMPTY_PASSWORD -> input_layout_password.error = getString(string.error_empty_password)
+      WRONG_USER_OR_PASS -> toast(getString(string.error_wrong_user_or_pass))
+      FACEBOOK_ERROR -> toast(getString(string.error_facebook_login))
+      else -> toast(getString(string.error_unknown))
     }
 
   }
