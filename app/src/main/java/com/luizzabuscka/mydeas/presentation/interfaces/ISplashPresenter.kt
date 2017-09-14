@@ -1,4 +1,4 @@
-package com.luizzabuscka.mydeas.presentation
+package com.luizzabuscka.mydeas.presentation.interfaces
 
 /**
  * Created by luizzabuscka on 02/08/17.

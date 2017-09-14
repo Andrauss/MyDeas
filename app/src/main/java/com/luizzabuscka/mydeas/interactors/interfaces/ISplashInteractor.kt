@@ -1,4 +1,4 @@
-package com.luizzabuscka.mydeas.interactors
+package com.luizzabuscka.mydeas.interactors.interfaces
 
 import com.luizzabuscka.mydeas.model.Login
 

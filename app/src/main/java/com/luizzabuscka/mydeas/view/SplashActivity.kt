@@ -4,11 +4,12 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.luizzabuscka.mydeas.R.layout
-import com.luizzabuscka.mydeas.presentation.ISplashPresenter
+import com.luizzabuscka.mydeas.presentation.interfaces.ISplashPresenter
 import com.luizzabuscka.mydeas.presentation.SplashPresenter
 import com.luizzabuscka.mydeas.extensions.fadeIn
 import com.luizzabuscka.mydeas.extensions.putDropShadow
 import com.luizzabuscka.mydeas.extensions.startActivityWithFade
+import com.luizzabuscka.mydeas.view.interfaces.ISplashActivity
 import kotlinx.android.synthetic.main.activity_login.ivLogo
 import java.util.Timer
 import kotlin.concurrent.schedule

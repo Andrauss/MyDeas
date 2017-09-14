@@ -6,4 +6,9 @@
   <dimen name="nav_header_height">176dp</dimen>
   <dimen name="fab_margin">16dp</dimen>
   <dimen name="et_height">68dp</dimen>
+  <dimen name="text_margin">16dp</dimen>
+  <dimen name="margin_top_bottom_card">4dp</dimen>
+  <dimen name="border_card">8dp</dimen>
+  <dimen name="margin_left_right_card">8dp</dimen>
+  <dimen name="padding_card">8dp</dimen>
 </resources>

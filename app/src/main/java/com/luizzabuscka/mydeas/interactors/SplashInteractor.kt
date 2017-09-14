@@ -1,21 +1,13 @@
 package com.luizzabuscka.mydeas.interactors
 
-import android.content.ContentValues
 import android.content.Context
-import android.util.Log
 import com.luizzabuscka.mydeas.database.LoginDAO
+import com.luizzabuscka.mydeas.interactors.interfaces.ISplashInteractor
 import com.luizzabuscka.mydeas.model.Login
-import com.luizzabuscka.mydeas.presentation.ISplashPresenter
+import com.luizzabuscka.mydeas.presentation.interfaces.ISplashPresenter
 import com.luizzabuscka.mydeas.services.Factory
-import com.luizzabuscka.mydeas.utils.database
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
-import org.jetbrains.anko.db.RowParser
-import org.jetbrains.anko.db.SqlOrderDirection
-import org.jetbrains.anko.db.classParser
-import org.jetbrains.anko.db.parseList
-import org.jetbrains.anko.db.rowParser
-import org.jetbrains.anko.db.select
 
 /**
  * Created by luizzabuscka on 02/08/17.

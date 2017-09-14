@@ -1,4 +1,4 @@
-package com.luizzabuscka.mydeas.presentation
+package com.luizzabuscka.mydeas.presentation.interfaces
 
 import com.luizzabuscka.mydeas.utils.enum.LoginEnum
 

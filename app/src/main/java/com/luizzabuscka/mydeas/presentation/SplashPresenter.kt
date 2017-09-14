@@ -2,10 +2,11 @@ package com.luizzabuscka.mydeas.presentation
 
 import android.content.Context
 import android.content.Intent
-import com.luizzabuscka.mydeas.interactors.ISplashInteractor
+import com.luizzabuscka.mydeas.interactors.interfaces.ISplashInteractor
 import com.luizzabuscka.mydeas.interactors.SplashInteractor
 import com.luizzabuscka.mydeas.prefs
-import com.luizzabuscka.mydeas.view.ISplashActivity
+import com.luizzabuscka.mydeas.presentation.interfaces.ISplashPresenter
+import com.luizzabuscka.mydeas.view.interfaces.ISplashActivity
 import com.luizzabuscka.mydeas.view.LoginActivity
 import com.luizzabuscka.mydeas.view.MainActivity
 

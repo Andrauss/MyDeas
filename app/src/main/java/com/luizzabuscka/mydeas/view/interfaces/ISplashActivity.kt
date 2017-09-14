@@ -1,4 +1,4 @@
-package com.luizzabuscka.mydeas.view
+package com.luizzabuscka.mydeas.view.interfaces
 
 import android.content.Intent
 

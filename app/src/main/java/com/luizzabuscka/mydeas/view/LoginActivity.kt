@@ -21,6 +21,7 @@ import com.luizzabuscka.mydeas.utils.enum.LoginEnum.FACEBOOK_ERROR
 import com.luizzabuscka.mydeas.utils.enum.LoginEnum.SUCCESS
 import com.luizzabuscka.mydeas.utils.enum.LoginEnum.WRONG_USER_OR_PASS
 import com.luizzabuscka.mydeas.extensions.putDropShadow
+import com.luizzabuscka.mydeas.view.interfaces.ILoginActivity
 import kotlinx.android.synthetic.main.activity_login.btEnter
 import kotlinx.android.synthetic.main.activity_login.etPassword
 import kotlinx.android.synthetic.main.activity_login.etUser

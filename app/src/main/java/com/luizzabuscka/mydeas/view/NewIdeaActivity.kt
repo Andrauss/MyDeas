@@ -4,11 +4,12 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.luizzabuscka.mydeas.R
 import com.luizzabuscka.mydeas.R.string
-import com.luizzabuscka.mydeas.presentation.INewIdeaPresenter
+import com.luizzabuscka.mydeas.presentation.interfaces.INewIdeaPresenter
 import com.luizzabuscka.mydeas.presentation.NewIdeaPresenter
 import com.luizzabuscka.mydeas.utils.enum.IdeaEnum
 import com.luizzabuscka.mydeas.utils.enum.IdeaEnum.EMPTY_DESCRIPTION
 import com.luizzabuscka.mydeas.utils.enum.IdeaEnum.EMPTY_TITLE
+import com.luizzabuscka.mydeas.view.interfaces.INewIdeaActivity
 import kotlinx.android.synthetic.main.activity_new_idea.btSave
 import kotlinx.android.synthetic.main.activity_new_idea.etDescription
 import kotlinx.android.synthetic.main.activity_new_idea.etTitle

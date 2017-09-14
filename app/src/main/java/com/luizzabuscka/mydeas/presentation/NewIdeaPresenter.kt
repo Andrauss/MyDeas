@@ -1,12 +1,13 @@
 package com.luizzabuscka.mydeas.presentation
 
 import android.content.Context
-import com.luizzabuscka.mydeas.interactors.INewIdeaInteractor
+import com.luizzabuscka.mydeas.interactors.interfaces.INewIdeaInteractor
 import com.luizzabuscka.mydeas.interactors.NewIdeaInteractor
 import com.luizzabuscka.mydeas.model.Idea
+import com.luizzabuscka.mydeas.presentation.interfaces.INewIdeaPresenter
 import com.luizzabuscka.mydeas.utils.enum.IdeaEnum.EMPTY_DESCRIPTION
 import com.luizzabuscka.mydeas.utils.enum.IdeaEnum.EMPTY_TITLE
-import com.luizzabuscka.mydeas.view.INewIdeaActivity
+import com.luizzabuscka.mydeas.view.interfaces.INewIdeaActivity
 
 /**
  * Created by luizzabuscka on 14/09/17.

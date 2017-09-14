@@ -1,4 +1,4 @@
-package com.luizzabuscka.mydeas.view
+package com.luizzabuscka.mydeas.view.interfaces
 
 import android.content.Intent
 import com.luizzabuscka.mydeas.utils.enum.LoginEnum

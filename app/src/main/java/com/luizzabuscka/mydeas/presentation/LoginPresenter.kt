@@ -4,12 +4,13 @@ import android.content.Context
 import android.content.Intent
 import com.luizzabuscka.mydeas.interactors.LoginInteractor
 import com.luizzabuscka.mydeas.model.Login
+import com.luizzabuscka.mydeas.presentation.interfaces.ILoginPresenter
 import com.luizzabuscka.mydeas.utils.enum.LoginEnum
 import com.luizzabuscka.mydeas.utils.enum.LoginEnum.EMPTY_PASSWORD
 import com.luizzabuscka.mydeas.utils.enum.LoginEnum.EMPTY_USER
 import com.luizzabuscka.mydeas.utils.enum.LoginEnum.SUCCESS
 import com.luizzabuscka.mydeas.utils.enum.LoginEnum.WRONG_USER_OR_PASS
-import com.luizzabuscka.mydeas.view.ILoginActivity
+import com.luizzabuscka.mydeas.view.interfaces.ILoginActivity
 import com.luizzabuscka.mydeas.view.MainActivity
 
 /**

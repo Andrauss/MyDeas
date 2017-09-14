@@ -2,8 +2,9 @@ package com.luizzabuscka.mydeas.interactors
 
 import android.content.Context
 import com.luizzabuscka.mydeas.database.LoginDAO
+import com.luizzabuscka.mydeas.interactors.interfaces.ILoginInteractor
 import com.luizzabuscka.mydeas.model.Login
-import com.luizzabuscka.mydeas.presentation.ILoginPresenter
+import com.luizzabuscka.mydeas.presentation.interfaces.ILoginPresenter
 import com.luizzabuscka.mydeas.utils.enum.LoginEnum.SUCCESS
 import com.luizzabuscka.mydeas.utils.enum.LoginEnum.WRONG_USER_OR_PASS
 
