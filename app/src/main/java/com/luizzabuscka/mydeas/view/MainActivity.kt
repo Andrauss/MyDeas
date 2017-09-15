@@ -69,9 +69,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
       R.id.nav_acelerators -> {
         fragment = AcceleratorsFragment()
       }
-      R.id.nav_map -> {
-
-      }
       R.id.nav_about -> {
         fragment = AboutFragment()
       }

@@ -23,6 +23,7 @@ import com.luizzabuscka.mydeas.presentation.interfaces.IIdeasPresenter
 import kotlinx.android.synthetic.main.fragment_ideas.*
 import org.jetbrains.anko.noButton
 import org.jetbrains.anko.support.v4.alert
+import org.jetbrains.anko.support.v4.share
 import org.jetbrains.anko.yesButton
 
 
@@ -62,7 +63,7 @@ class IdeasFragment : Fragment(), IIdeasFragment {
     rvIdeas.adapter = IdeasAdapter(ideas) { type: CardOptionsEnum, idea: Idea ->
       when (type) {
         SHARE -> {
-          toast("Share: ${idea.title}")
+          share(idea.title)
         }
         EDIT -> {
           val it: Intent = Intent(context, IdeaMaintenanceActivity::class.java)

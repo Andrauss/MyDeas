@@ -53,7 +53,11 @@ class AcceleratorsFragment : Fragment(), IAcceleratorsFragment {
           browse(accelerator.url)
         }
         SEE_MAP -> {
-          //TODO
+          val it = Intent(context, MapsActivity::class.java)
+          it.putExtra("title", accelerator.name)
+          it.putExtra("lat", accelerator.latitude)
+          it.putExtra("lon", accelerator.longitude)
+          startActivity(it)
         }
         CALL -> {
           makeCall(accelerator.phone)
