@@ -9,6 +9,7 @@ import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
+import com.facebook.login.LoginManager
 import com.luizzabuscka.mydeas.R
 import com.luizzabuscka.mydeas.prefs
 import kotlinx.android.synthetic.main.activity_main.*
@@ -76,6 +77,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
           alert(getString(R.string.dialog_logout)) {
               yesButton {
                   prefs.logged = false
+                  LoginManager.getInstance().logOut()
                   startActivity(Intent(this@MainActivity, LoginActivity::class.java))
                   finish()
               }
