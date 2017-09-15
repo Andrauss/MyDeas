@@ -5,6 +5,7 @@ import com.luizzabuscka.mydeas.model.Idea
 /**
  * Created by luizzabuscka on 14/09/17.
  */
-interface INewIdeaInteractor {
+interface IIdeaMaintenanceInteractor {
   fun saveIdea(idea: Idea)
+    fun updateIdea(oldIdea: Idea, idea: Idea)
 }

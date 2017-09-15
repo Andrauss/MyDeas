@@ -37,4 +37,7 @@
   <string name="menu_logout">Sair</string>
   <string name="dialog_delete_idea">Deseja deletar essa ideia?</string>
   <string name="toast_deleted_idea">Ideia excluída com sucesso</string>
+  <string name="no_deias">Nenhuma ideia cadastrada</string>
+  <string name="edit_idea">Editar Ideia</string>
+    <string name="dialog_logout">Deseja realmente sair?</string>
 </resources>

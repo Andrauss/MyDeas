@@ -5,6 +5,14 @@
     tools:context="com.luizzabuscka.mydeas.view.IdeasFragment"
     >
 
+  <TextView
+      android:id="@+id/tvNoIdeas"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:text="@string/no_deias"
+      android:visibility="gone"/>
+
 
   <android.support.v7.widget.RecyclerView
       android:id="@+id/rvIdeas"
