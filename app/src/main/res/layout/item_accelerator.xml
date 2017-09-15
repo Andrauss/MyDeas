@@ -23,64 +23,62 @@
         android:padding="@dimen/padding_card"
         android:orientation="vertical">
 
-      <TextView
-          android:id="@+id/tvTitle"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:textAlignment="center"
-          android:textSize="18sp"
-          android:textStyle="bold"
-          tools:text="Teste titulo"
-          />
-
-      <TextView
-          android:id="@+id/tvDescription"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:textAlignment="center"
-          android:textStyle="italic"
-          tools:text="Teste descricao"
-          />
-
       <android.support.constraint.ConstraintLayout
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:layout_marginTop="8dp"
           >
 
-        <ImageView
-            android:id="@+id/ivShare"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:layout_marginStart="24dp"
-            android:src="@drawable/ic_share_black_24dp"
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="viewStart"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toStartOf="@+id/ivSite"
             card_view:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="0dp"
-            android:tint="@color/colorAccent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            tools:text="Teste titulo"
             />
-
         <ImageView
-            android:id="@+id/ivEdit"
+            android:id="@+id/ivSite"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:src="@drawable/ic_mode_edit_black_24dp"
-            card_view:layout_constraintEnd_toStartOf="@+id/ivDelete"
-            card_view:layout_constraintStart_toEndOf="@+id/ivShare"
-            tools:layout_editor_absoluteY="0dp"
+            android:src="@drawable/ic_open_in_browser_black_24dp"
             android:tint="@color/colorAccent"
+            card_view:layout_constraintEnd_toStartOf="@+id/ivMap"
+            tools:layout_editor_absoluteY="0dp"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintBottom_toBottomOf="parent"
             />
 
         <ImageView
-            android:id="@+id/ivDelete"
+            android:id="@+id/ivMap"
             android:layout_width="32dp"
             android:layout_height="32dp"
-            android:layout_marginEnd="24dp"
-            android:src="@drawable/ic_delete_black_24dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_map_black_24dp"
+            android:tint="@color/colorAccent"
+            card_view:layout_constraintEnd_toStartOf="@+id/ivCall"
+            tools:layout_editor_absoluteY="0dp"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/ivCall"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_local_phone_black_24dp"
+            android:tint="@color/colorAccent"
             card_view:layout_constraintEnd_toStartOf="parent"
             tools:layout_editor_absoluteY="0dp"
-            android:tint="@color/colorAccent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:layout_constraintBottom_toBottomOf="parent"
             />
 
       </android.support.constraint.ConstraintLayout>

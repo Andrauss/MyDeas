@@ -31,7 +31,7 @@ import org.jetbrains.anko.yesButton
  */
 class IdeasFragment : Fragment(), IIdeasFragment {
 
-  var presenter : IIdeasPresenter? = null
+  var presenter: IIdeasPresenter? = null
 
   override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?,
       savedInstanceState: Bundle?): View? {
@@ -49,14 +49,14 @@ class IdeasFragment : Fragment(), IIdeasFragment {
   }
 
   override fun updateList(ideas: List<Idea>) {
-      if (ideas.isEmpty()) {
-          tvNoIdeas.visibility = View.VISIBLE
-          rvIdeas.visibility = View.GONE
-          return
-      }
+    if (ideas.isEmpty()) {
+      tvNoIdeas.visibility = View.VISIBLE
+      rvIdeas.visibility = View.GONE
+      return
+    }
 
-      tvNoIdeas.visibility = View.GONE
-      rvIdeas.visibility = View.VISIBLE
+    tvNoIdeas.visibility = View.GONE
+    rvIdeas.visibility = View.VISIBLE
 
     rvIdeas.setLayoutManager(GridLayoutManager(context, 1))
     rvIdeas.adapter = IdeasAdapter(ideas) { type: CardOptionsEnum, idea: Idea ->
@@ -65,10 +65,10 @@ class IdeasFragment : Fragment(), IIdeasFragment {
           toast("Share: ${idea.title}")
         }
         EDIT -> {
-          val it : Intent = Intent(context, IdeaMaintenanceActivity::class.java)
-            it.putExtra("title", idea.title)
-            it.putExtra("description", idea.description)
-            startActivity(it)
+          val it: Intent = Intent(context, IdeaMaintenanceActivity::class.java)
+          it.putExtra("title", idea.title)
+          it.putExtra("description", idea.description)
+          startActivity(it)
         }
         DELETE -> {
           alert(getString(string.dialog_delete_idea)) {
@@ -84,9 +84,6 @@ class IdeasFragment : Fragment(), IIdeasFragment {
     toast(getString(string.toast_deleted_idea))
     presenter?.getIdeas()
   }
-
-
-
 
 
 }

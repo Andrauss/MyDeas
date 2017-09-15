@@ -11,7 +11,7 @@
     <item
         android:id="@+id/nav_acelerators"
         android:icon="@drawable/ic_menu_gallery"
-        android:title="@string/menu_acelerators"/>
+        android:title="@string/menu_accelerators"/>
     <item
         android:id="@+id/nav_map"
         android:icon="@drawable/ic_menu_slideshow"
