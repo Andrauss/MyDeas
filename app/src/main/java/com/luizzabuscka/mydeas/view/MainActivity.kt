@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
   }
 
   fun configUi() {
-    fab.setOnClickListener { view ->
+    fab.setOnClickListener {
       newIdea()
     }
 

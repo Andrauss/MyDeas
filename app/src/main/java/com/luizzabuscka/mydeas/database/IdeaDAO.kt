@@ -46,7 +46,6 @@ class IdeaDAO {
 
   fun delete(context: Context, idea: Idea) {
     context.database.use {
-      val values = ContentValues()
       delete(TABLE," title LIKE '${idea.title}' AND description LIKE '${idea.description}' ", null)
     }
   }
